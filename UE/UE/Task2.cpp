@@ -68,7 +68,7 @@ public:
 };
 
 
-int main() {
+int tmain() {
   Player* A = new Player("Andrii", 0, 100.0, 50.0);
   Player* B = new Player("Bogdan", 1, 50.0, 10.0);
 
@@ -131,4 +131,5 @@ int main() {
       break;
     }
   }
+  return 0;
 }

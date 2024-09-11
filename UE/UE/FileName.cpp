@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+int ttmain() {
 	float health; 
 
 	std::cin >> health; 
@@ -20,4 +20,5 @@ int main() {
 		std::cout << "Current health: " << health << "\n"; 
 	}
 	std::cout << "\nYou died!"; 
+	return 0;
 }
