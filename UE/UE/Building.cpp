@@ -1,14 +1,20 @@
 #include <iostream>
 #include "Building.h"
 
-Building::Building() = default;
+int Building::ID = 0;
+
+Building::Building() {
+  ID++;
+};
 
 Building::~Building() {
-  std::cout << "Object destroyed!";
+  std::cout << "\nObject destroyed!\n";
 }
 
-Building::Building(int _ID, int _maxAge, int _initialCost) : ID(_ID), maxAge(_maxAge), initialCost(_initialCost)
-{};
+Building::Building(int _maxAge, int _initialCost) : maxAge(_maxAge), initialCost(_initialCost)
+{
+  ID++;
+};
 
 void Building::Destroy() {
     std::cout << "Будівля з цим айді була видалена:" << ID << "\n";
@@ -19,15 +25,19 @@ int Building::getCost() {
     if (currAge == maxAge) return 0;
 
     int divisorForcost = maxAge / currAge;
-    int costForThisBuilding = initialCost / divisorForcost;
-    return costForThisBuilding;
+    if (divisorForcost != 0) {
+      int costForThisBuilding = initialCost / divisorForcost;
+      return costForThisBuilding;
+    }
+    else {
+      std::cout << "Current age is bigger than max age!";
+      return -1;
+    }
 }
 
 void Building::toAge(int year) {
   currAge += year;
   if (currAge > maxAge) {
     Destroy();
-    //delete this;
-    //this->~Building();
   }
 }

@@ -2,13 +2,19 @@
 #include "Building.h"
 
 int main() {
-  Building* A = new Building(1, 10, 4);
+  Building* A = new Building(10, 4);
 
   A->toAge(5);
 
   std::cout << A->getCost() << "\n";
 
-  A->toAge(5);
+  A->toAge(15);
 
   std::cout << A->getCost();
+
+  Building* B = new Building(7, 4);
+
+  B->toAge(8);
+
+  //std::cout << B->getCost() << "\n";
 }
