@@ -131,6 +131,7 @@
     <ClCompile Include="FileName.cpp" />
     <ClCompile Include="Task2.cpp" />
     <ClCompile Include="Task3.cpp" />
+    <ClCompile Include="Task4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Building.h" />

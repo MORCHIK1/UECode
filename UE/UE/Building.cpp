@@ -11,13 +11,13 @@ Building::~Building() {
   std::cout << "\nObject destroyed!\n";
 }
 
-Building::Building(int _maxAge, int _initialCost) : maxAge(_maxAge), initialCost(_initialCost)
+Building::Building(int _maxAge, int _initialCost) : m_ID(ID), maxAge(_maxAge), initialCost(_initialCost)
 {
   ID++;
 };
 
 void Building::Destroy() {
-    std::cout << "Будівля з цим айді була видалена:" << ID << "\n";
+    std::cout << "Будівля з цим айді була видалена:" << m_ID << "\n";
 }
 
 int Building::getCost() {

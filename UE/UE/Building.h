@@ -3,6 +3,7 @@
 
 class Building {
 private:
+  int m_ID;
   static int ID;
   int maxAge;
   int initialCost;

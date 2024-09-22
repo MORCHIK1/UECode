@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Building.h"
 
-int main() {
+int tttmain() {
   Building* A = new Building(10, 4);
 
   A->toAge(5);
@@ -17,4 +17,5 @@ int main() {
   B->toAge(8);
 
   //std::cout << B->getCost() << "\n";
+  return 0;
 }
