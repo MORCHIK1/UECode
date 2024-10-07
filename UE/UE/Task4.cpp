@@ -67,7 +67,7 @@ public:
   }
 };
 
-int main() {
+int Amain() {
   Character Aurora;
   std::unique_ptr <Rifle> forAurora = std::make_unique<Rifle>();
 
@@ -80,4 +80,5 @@ int main() {
   Aurora.SetWeapon(std::make_unique<RocketLauncher>());
 
   std::cout<<Aurora.GetWeapon()->GetDamage();
+  return 0;
 }

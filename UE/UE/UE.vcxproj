@@ -128,13 +128,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Building.cpp" />
+    <ClCompile Include="CreatureClass.cpp" />
     <ClCompile Include="FileName.cpp" />
+    <ClCompile Include="FinalTask.cpp" />
+    <ClCompile Include="ObserverClass.cpp" />
+    <ClCompile Include="PublisherClass.cpp" />
     <ClCompile Include="Task2.cpp" />
     <ClCompile Include="Task3.cpp" />
     <ClCompile Include="Task4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Building.h" />
+    <ClInclude Include="CreatureClass.h" />
+    <ClInclude Include="ObserverClass.h" />
+    <ClInclude Include="Publisher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
