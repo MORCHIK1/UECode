@@ -3,13 +3,14 @@
 #include "Publisher.h"
 
 int main() {
-  ObserverPrint ab;
+  ObserverPrint* ab = new ObserverPrint;
   Human a;
   Publisher res;
-  ab.onNotify(a);
+  ab->onNotify(a);
   res.AddObserver(ab);
   res.notify(a);
   std::string answ = a.GetName();
   std::cout << answ;
   a.printName();
+  delete ab;
 }

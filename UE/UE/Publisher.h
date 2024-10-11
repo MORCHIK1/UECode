@@ -4,10 +4,10 @@
 
 class Publisher {
 private:
-  std::vector<Observer> MyObservers;
+  std::vector<Observer*> MyObservers;
   int number_of_creatures;
 public:
-  void AddObserver(const Observer& observer_);
-  void RemoveObserver(Observer& _observer);
+  void AddObserver(Observer* observer_);
+  void RemoveObserver(const Observer* _observer);
   void notify(const Creature& entity);
 };

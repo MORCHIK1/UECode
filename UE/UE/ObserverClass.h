@@ -10,12 +10,11 @@ public:
   Observer();
   virtual ~Observer();
   virtual void onNotify(const Creature& entity);
-  bool operator==(const Observer& a);
+  bool operator==(const Observer* a);
 };
 
 class ObserverPrint : public Observer
 {
-
 public:
   void onNotify(const Creature& entity) final;
 
