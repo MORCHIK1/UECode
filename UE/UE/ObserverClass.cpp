@@ -11,8 +11,8 @@ void Observer::onNotify(const Creature& entity) {
   std::cout << "Just Observer\n";
 };
 
-bool Observer::operator==(const Observer& a) {
-  if (this->ID == a.ID)return true;
+bool Observer::operator==(const Observer* a) {
+  if (this->ID == a->ID)return true;
     return false;
   }
 
